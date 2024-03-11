@@ -29,9 +29,9 @@
 **Diverse data distributions, including corner cases and hard scenarios**
 By incorporating complex traffic flows, LightwheelOcc contains diversified simulation of different traffic conditions and driving behaviors. Apart from usual scenarios, the dataset also presents corner cases like small and rare objects on the road, challenging conditions like nighttime and rainy scenes, etc. , enriching real-world data diversity.
 <div align="center">
-  <img src="resouces/occ_sample_1.png" alt="occ_sample_1" width="30%">
-  <img src="resouces/occ_sample_2.png" alt="occ_sample_2" width="30%">
-  <img src="resouces/occ_sample_3.png" alt="occ_sample_3" width="30%">
+  <img src="resources/occ_sample_1.png" alt="occ_sample_1" width="30%">
+  <img src="resources/occ_sample_2.png" alt="occ_sample_2" width="30%">
+  <img src="resources/occ_sample_3.png" alt="occ_sample_3" width="30%">
 </div>
 
 ## 2. Introduction
