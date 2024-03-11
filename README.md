@@ -1,9 +1,8 @@
 # LightwheelOcc
-<div id="subtitle" align="center">A 3D Occupancy Synthetic Dataset in Autonomous Driving
-This content is only supported in a Feishu Docs</div>
+<div id="subtitle" align="center">A 3D Occupancy Synthetic Dataset in Autonomous Driving</div>
 
 <div id="top" align="center">
-<img src="resource/occ_video.gif">
+<img src="resources/occ_video.gif">
 </div>
 
 ## Changelog
