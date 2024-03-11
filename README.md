@@ -59,26 +59,70 @@ By incorporating complex traffic flows, LightwheelOcc contains diversified simul
 
   
 ### 3.2 Data Sample
-| **Label Type**    | **Sample**                      |
-|-------------------|---------------------------------|
-| 3D Occupancy      | ![](resources/sample_occ.png)   |
-| Depth Map         | ![](resources/sample_depth.jpeg) |
+| **Sample**        | ![](resources/sample_occ.png) | ![](resources/sample_depth.jpeg) |
+| **Label Type**    | 3D Occupancy | Depth Map |
 
 ### 3.3 Data Distribution
-| **Category**                | **Class**                         | **Distribution** |
-|-----------------------------|-----------------------------------|------------------|
-| By Map Type                 | Urban Areas without Intersections | 60%              |
-|                             | Urban Areas with Intersections    | 20%              |
-|                             | Suburbs                           | 10%              |
-|                             | Freeways                          | 10%              |
-| By Lighting Conditions      | Daytime                           | 80%              |
-|                             | Nighttime                         | 20%              |
-| By Weather Types            | Sunny                             | 40%              |
-|                             | Overcast                          | 40%              |
-|                             | Rainy or After Rain               | 20%              |
-| By Obstacle Types           | Traffic Cones                     | 40%              |
-|                             | Jersey Barrier                    | 40%              |
-|                             | Road Barriers                     | 20%              |
+<table>
+  <tr>
+    <th>**Category**</th>
+    <th>**Class**</th>
+    <th>**Distribution**</th>
+  </tr>
+  <tr>
+    <td rowspan="4">By Map Type</td>
+    <td>Urban Areas without Intersections</td>
+    <td>60%</td>
+  </tr>
+  <tr>
+    <td>Urban Areas with Intersections</td>
+    <td>20%</td>
+  </tr>
+  <tr>
+    <td>Suburbs</td>
+    <td>10%</td>
+  </tr>
+  <tr>
+    <td>Freeways</td>
+    <td>10%</td>
+  </tr>
+  <tr>
+    <td rowspan="2">By Lighting Conditions</td>
+    <td>Daytime</td>
+    <td>80%</td>
+  </tr>
+  <tr>
+    <td>Nighttime</td>
+    <td>20%</td>
+  </tr>
+  <tr>
+    <td rowspan="3">By Weather Types</td>
+    <td>Sunny</td>
+    <td>40%</td>
+  </tr>
+  <tr>
+    <td>Overcast</td>
+    <td>40%</td>
+  </tr>
+  <tr>
+    <td>Rainy or After Rain</td>
+    <td>20%</td>
+  </tr>
+  <tr>
+    <td rowspan="3">By Obstacle Types</td>
+    <td>Traffic Cones</td>
+    <td>40%</td>
+  </tr>
+  <tr>
+    <td>Jersey Barrier</td>
+    <td>40%</td>
+  </tr>
+  <tr>
+    <td>Road Barriers</td>
+    <td>20%</td>
+  </tr>
+</table>
+
 ### 3.4 Test and Results
 To be released
 
