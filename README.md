@@ -5,6 +5,8 @@
 <img src="resources/occ_video.gif">
 </div>
 
+English | [简体中文](./README_cn.md)
+
 ## Changelog
 
 ## Table of Contents
@@ -132,6 +134,7 @@ Generally, when training data, it is critical to check three key indicators, so 
 1. Whether the labels of real data and synthetic data are aligned:  label alignment of synthetic data usually refers to whether the labels are consistent with those in the real-world dataset. If not aligned, the model may not be able to distinguish each category correctly.
 2. Whether the number of real data and synthetic data is comparable: The volume of data determines the adequacy of model training. Insufficient data volume may lead to overfitting, while a large amount of data can improve the model's generalization ability.
 3. Whether synthetic data is Corner Case or generic data: The data type (such as Corner Case or generic data) affects the model's generalization ability and sensitivity to specific situations.
+
 The above issues must be comprehensively considered to ensure the model performance, when selecting training methods and data sampling strategies.
 As for LightwheelOcc, the labels have been aligned, and the amount of real data is greater than that of the synthesized data, aiming at solving the Corner Case problem. Therefore, we recommend using a hybrid training approach, which involves mixing the synthesized and real data for direct training.
 
