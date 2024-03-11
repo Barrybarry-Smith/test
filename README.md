@@ -59,15 +59,16 @@ By incorporating complex traffic flows, LightwheelOcc contains diversified simul
 
   
 ### 3.2 Data Sample
-| **Sample**        | ![](resources/sample_occ.png) | ![](resources/sample_depth.jpeg) |
-| **Label Type**    | 3D Occupancy | Depth Map |
+| **3D Occupancy**    | **Depth Map**            |
+|---------------------|--------------------------|
+| <img src="resources/sample_occ.png" alt="3D Occupancy" width="300"> | <img src="resources/sample_depth.jpeg" alt="Depth Map" width="300"> |
 
 ### 3.3 Data Distribution
 <table>
   <tr>
-    <th>**Category**</th>
-    <th>**Class**</th>
-    <th>**Distribution**</th>
+    <th>Category</th>
+    <th>Class</th>
+    <th>Distribution</th>
   </tr>
   <tr>
     <td rowspan="4">By Map Type</td>
