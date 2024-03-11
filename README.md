@@ -43,6 +43,8 @@ By incorporating complex traffic flows, LightwheelOcc contains diversified simul
 ### 3.1 Basic Information
 - The LightwheelOcc dataset contains 40,000 frames, totaling 240,000 images, of which 30,000 frames are used for training scenarios, 5000 frames are used for validation scenarios, and 5000 frames are used for testing scenarios.
 - LightwheelOcc includes 6 camera sensor data, as well as labels for different tasks, including 3D Occupancy and Depth Map.
+- The dataset comprises 18 classes. Classes 0 - 16 have the same definition with the [nuScenes-lidarseg](https://github.com/nutonomy/nuscenes-devkit/blob/fcc41628d41060b3c1a86928751e5a571d2fc2fa/python-sdk/nuscenes/eval/lidarseg/README.md) dataset. The label 17 category denotes voxels that are unoccupied, referred to as [free]. The voxel semantics for each sample are provided in the labels.npz file as [semantics].
+
 | **Type**          | **Info**                     |
 |-------------------|------------------------------|
 | Train             | 30000 frames                 |
@@ -54,7 +56,7 @@ By incorporating complex traffic flows, LightwheelOcc contains diversified simul
 | Range             | [-40, -40, -1.0, 40, 40, 5.4]|
 | Classes           | 18 (without ignore)          |
 | Labels            | 3D Occupancy and Depth Map   |
-- The dataset comprises 18 classes. Classes 0 - 16 have the same definition with the [nuScenes-lidarseg](https://github.com/nutonomy/nuscenes-devkit/blob/fcc41628d41060b3c1a86928751e5a571d2fc2fa/python-sdk/nuscenes/eval/lidarseg/README.md) dataset. The label 17 category denotes voxels that are unoccupied, referred to as [free]. The voxel semantics for each sample are provided in the labels.npz file as [semantics].
+
   
 ### 3.2 Data Sample
 | **Label Type**    | **Sample**                      |
@@ -63,18 +65,20 @@ By incorporating complex traffic flows, LightwheelOcc contains diversified simul
 | Depth Map         | ![](resources/sample_depth.png) |
 
 ### 3.3 Data Distribution
-|                   | **Class**                    | **Distribution**  |
-|-------------------|------------------------------|
-| **By Maps Type**             | 30000 frames                 |
-| Validation        | 5000 frames                  |
-| Test              | 5000 frames                  |
-| Number of Cameras | 6                            |
-| Number of Images  | 240,000                      |
-| Voxel Size        | 1600x900                     |
-| Range             | [-40, -40, -1.0, 40, 40, 5.4]|
-| Classes           | 18 (without ignore)          |
-| Labels            | 3D Occupancy and Depth Map   |
-
+| **Category**                | **Class**                         | **Distribution** |
+|-----------------------------|-----------------------------------|------------------|
+| By Map Type                 | Urban Areas without Intersections | 60%              |
+|                             | Urban Areas with Intersections    | 20%              |
+|                             | Suburbs                           | 10%              |
+|                             | Freeways                          | 10%              |
+| By Lighting Conditions      | Daytime                           | 80%              |
+|                             | Nighttime                         | 20%              |
+| By Weather Types            | Sunny                             | 40%              |
+|                             | Overcast                          | 40%              |
+|                             | Rainy or After Rain               | 20%              |
+| By Obstacle Types           | Traffic Cones                     | 40%              |
+|                             | Jersey Barrier                    | 40%              |
+|                             | Road Barriers                     | 20%              |
 ### 3.4 Test and Results
 To be released
 
