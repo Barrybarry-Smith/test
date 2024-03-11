@@ -27,6 +27,7 @@
 
 ## 1. Highlights
 **Diverse data distributions, including corner cases and hard scenarios**
+
 By incorporating complex traffic flows, LightwheelOcc contains diversified simulation of different traffic conditions and driving behaviors. Apart from usual scenarios, the dataset also presents corner cases like small and rare objects on the road, challenging conditions like nighttime and rainy scenes, etc. , enriching real-world data diversity.
 <div align="center">
   <img src="resources/occ_sample_1.png" alt="occ_sample_1" width="30%">
@@ -91,9 +92,9 @@ As for LightwheelOcc, the labels have been aligned, and the amount of real data 
 
 ## 4. Getting Started
 ### 4.1 Download Data
-Google Drive: To be released
-BaiduNetdisk:  To be released
-OpenDataLab: To be released
+- Google Drive: To be released
+- BaiduNetdisk:  To be released
+- OpenDataLab: To be released
 
 ### 4.2 Prepare Dataset
 - Directory structure
@@ -131,10 +132,10 @@ LightwheelOcc
 |   ├   ├── imgs
 |   ├   ├── annotations.json
 ```
-- [imgs/] contains images captured by various cameras.
-- [gts/] contains the ground truth of each sample. [scene_name] specifies a sequence of frames, and [frame_token] specifies a single frame in a sequence.
-- [annotations.json] contains meta infos of the dataset.
-- [labels.npz] contains [semantics], [mask_lidar], and [mask_camera] for each frame.
+- *imgs/* contains images captured by various cameras.
+- *gts/* contains the ground truth of each sample. *scene_name* specifies a sequence of frames, and *frame_token* specifies a single frame in a sequence.
+- *annotations.json* contains meta infos of the dataset.
+- *labels.npz* contains *semantics*, *mask_lidar*, and *mask_camera* for each frame.
 ```
 annotations {
     "train_split": ["scene-0001", ...],                         <list> -- training dataset split by scene_name
@@ -183,5 +184,7 @@ This dataset is provided by Lightwheel AI LIMITED, who reserves all rights. No r
 
 ## 6. Contact Us
 **Website** [https://lightwheel.ai/]
+
 **Contact**: [LightwheelOcc@lightwheel.ai]
+
 If you are interested or have any questions, feel free to contact us.
